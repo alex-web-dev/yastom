@@ -1,0 +1,37 @@
+.services-cards {
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    margin: -32px -16px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 32px 16px 0;
+    width: calc(100% / 3 - 32px);
+  }
+
+  @media (max-width: 991px) {
+    &__list {
+      margin: -16px -8px 0;
+    }
+  
+    &__item {
+      margin: 16px 8px 0;
+      width: calc(100% / 3 - 16px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 18px;
+    }
+
+    &__item {
+      width: calc(100% - 16px);
+    }
+  }
+}

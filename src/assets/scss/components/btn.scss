@@ -1,0 +1,99 @@
+.btn {
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #fff;
+  cursor: pointer;
+  transition: color .3s, background .3s, border .3s;
+
+  @media (min-width: 767.01px) {
+    &:hover &__icon {
+      &--phone {
+        animation-name: buzz;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+
+  &__icon {
+    flex: 0 0 auto;
+    fill: #fff;
+    transition: fill .3s;
+
+    &:first-child {
+      margin-right: 13px;
+    }
+
+    &:last-child {
+      margin-left: 13px;
+    }
+
+    &:first-child:last-child {
+      margin: 0;
+    }
+  }
+
+  &--i-flex {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--border {
+    background-color: transparent;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    @media (min-width: 767.01px) {
+      &:hover {
+        background-color: $color-primary;
+        color: #fff;
+      }
+    }
+  }
+
+  &--border-gray {
+    background-color: transparent;
+    color: $color-text;
+    border: 1px solid $color-light-gray;
+
+    @media (min-width: 767.01px) {
+      &:hover {
+        color: $color-text;
+        border-color: $color-gray;
+      }
+    }
+  }
+
+  &--text-black {
+    color: $color-black;
+  }
+
+  @media (max-width: 991px) {
+    padding: 12px 26px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 11px 18px;
+    border-radius: 12px;
+
+    &__icon {
+      &:first-child {
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+  }
+}

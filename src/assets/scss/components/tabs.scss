@@ -1,0 +1,22 @@
+.tabs {
+  &__btns {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  &__btn {
+    flex: 0 0 auto;
+    
+    &--active {
+      cursor: default;
+    }
+  }
+
+  &__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}

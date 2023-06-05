@@ -1,0 +1,64 @@
+.service-tabs {
+  &__btns {
+    flex-wrap: wrap;
+    margin: -8px -4px 0;
+  }
+
+  &__btn {
+    margin: 8px 4px 0;
+    padding-left: 23.5px;
+    padding-right: 23.5px;
+    flex: 0 0 auto;
+    display: none;
+    border-radius: 24px;
+
+    &.tabs__btn--active {
+      background-color: $color-primary;
+      color: #fff;
+      border-color: $color-primary
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &--more {
+      display: inline-block;
+    }
+  }
+
+  &__item {
+    padding-top: 27px;
+  }
+
+  &--opened &__btn {
+    display: inline-block;
+
+    &--more {
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__btns {
+      flex-wrap: nowrap;
+    }
+
+    &__btn {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__btn {
+      padding: 8px 15px;
+    }
+
+    &__item {
+      padding-top: 24px;
+    }
+  }
+}

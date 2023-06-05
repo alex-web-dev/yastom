@@ -1,0 +1,43 @@
+.review {
+  padding: 30px 30px 26px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+
+  &__value {
+    font-size: 20px;
+    font-weight: 700;
+
+    &-main {
+      font-size: 36px;
+      font-weight: 600;
+    }
+  }
+
+  &__rate {
+    margin-top: 4px;
+  }
+
+  &__img {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 991px) {
+    &__value {
+      &-main {
+        font-size: 34px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 27px 30px 25px;
+
+    &__value {
+      &-main {
+        font-size: 32px;
+      }
+    }
+  }
+}

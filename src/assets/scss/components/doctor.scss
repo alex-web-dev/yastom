@@ -1,0 +1,151 @@
+.doctor {
+  &__content {
+    position: relative;
+    padding: 0 76px;
+    display: flex;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      position: absolute;
+    }
+
+    &:before {
+      right: 38%;
+      bottom: 35%;
+      @include pseudo-icon('../img/icons/circle-1.svg', 138px, 122px);
+    }
+
+    &:after {
+      right: 4%;
+      bottom: -26%;
+      @include pseudo-icon('../img/icons/circle-2.svg', 283px, 300px);
+    }
+  }
+
+  &__info {
+    z-index: 1;
+    padding: 165px 0 170px;
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__label {
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    line-height: 0.7;
+  }
+
+  &__img {
+    z-index: 1;
+    position: absolute;
+    right: 145px;
+    bottom: -13px;
+    max-height: 100%;
+
+    img {
+      display: block;
+      max-height: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+
+
+  @media (max-width: 1140px) {
+    &__content {
+      padding: 0 60px;
+
+      &:before {
+        width: 115px;
+      }
+
+      &:after {
+        width: 240px;
+      }
+    }
+
+    &__info {
+      padding: 130px 0;
+      flex-basis: 50%;
+    }
+
+    &__img {
+      bottom: -15px;
+      width: 360px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    &__content {
+      padding: 0 45px;
+
+      &:before {
+        right: 32%;
+        top: 74px;
+        width: 90px;
+      }
+
+      &:after {
+        right: 15px;
+        bottom: -132px;
+        width: 190px;
+      }
+    }
+
+    &__info {
+      padding: 110px 0;
+      flex-basis: 54%;
+    }
+
+    &__img {
+      right: 45px;
+      width: 310px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__content {
+      padding: 20px 24px;
+      min-height: 250px;
+
+      &:before {
+        right: min(196px, 61%);
+        top: 102px;
+        width: 102px;
+      }
+
+      &:after {
+        right: 62px;
+        bottom: -113px;
+        width: 212px;
+        transform: rotate(165deg);
+      }
+    }
+
+    &__info {
+      flex-basis: 100%;
+      max-width: 260px;
+      padding: 0;
+      justify-content: flex-start;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 1;
+    }
+    
+    &__img {
+      right: -48px;
+      bottom: 0;
+      max-width: min(81%, 260px);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "vars";
+@import "mixins";
+@import "libs";
+@import "base";
+@import "fonts";
+@import "animation";
+
+@import "./global";
+@import "./global-media";
+
+@import "./components/btn";
+@import "./components/input";
+@import "./components/tabs";
+@import "./components/rate";
+@import "./components/header";
+@import "./components/main";
+@import "./components/banner";
+@import "./components/service-tabs";
+@import "./components/service-price";
+@import "./components/service-prices";
+@import "./components/services";
+@import "./components/doctor";
+@import "./components/service-card";
+@import "./components/services-cards";
+@import "./components/review";
+@import "./components/reviews";
+@import "./components/map";
+@import "./components/callback-map";
+@import "./components/gallery";
+@import "./components/footer";

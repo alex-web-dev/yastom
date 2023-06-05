@@ -1,0 +1,40 @@
+.main {
+  padding: 130px 0 64px;
+  flex: 1 1 auto;
+  overflow: hidden;
+
+  &__doctor,
+  &__section {
+    margin-top: 64px;
+  }
+
+  &__services {
+    margin-top: 55px;
+  }
+
+  @media (max-width: 991px) {
+    padding: 104px 0 54px;
+
+    &__doctor,
+    &__section {
+      margin-top: 54px;
+    }
+  
+    &__services {
+      margin-top: 45px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 72px 0 26px;
+
+    &__section,
+    &__services {
+      margin-top: 25px;
+    }
+
+    &__doctor {
+      margin-top: 32px;
+    }
+  }
+}

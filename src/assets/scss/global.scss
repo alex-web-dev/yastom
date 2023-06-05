@@ -1,0 +1,75 @@
+.body--lock {
+  overflow: hidden
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $container-offset;
+}
+  
+.link {
+  color: $color-primary;
+}
+
+.title1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.title2 {
+  font-size: 32px;
+}
+
+.title3 {
+  font-size: 24px;
+}
+
+.title4 {
+  font-size: 20px;
+}
+
+.title1,
+.title2,
+.title3 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.text {
+  line-height: 1.4;
+
+  &--big {
+    font-size: 18px;
+  }
+
+  &--small {
+    font-size: 14px;
+  }
+
+  &--extra-small {
+    font-size: 12px;
+  }
+
+  &--gray {
+    color: $color-gray;
+  }
+
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--semibold {
+    font-weight: 600;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+}
+
+.logo {
+  &__img {
+    max-height: 64px;
+  }
+}

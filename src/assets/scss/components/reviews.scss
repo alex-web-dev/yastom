@@ -1,0 +1,33 @@
+.reviews {
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    margin: -24px -12px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin: 24px 12px 0;
+    width: calc(50% - 24px);
+  }
+
+  @media (max-width: 991px) {
+    &__list {
+      margin: -16px -8px 0;
+    }
+  
+    &__item {
+      margin: 16px 8px 0;
+      width: calc(50% - 16px);
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__title {
+      margin-bottom: 20px;
+    }
+  }
+}

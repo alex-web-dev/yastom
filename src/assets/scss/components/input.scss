@@ -1,0 +1,22 @@
+.input {
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 15px;
+  outline: none;
+  border: 1px solid transparent;
+  transition: border .3s;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+  }
+
+  &[type=number] {
+    appearance: textfield;
+  }
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}
